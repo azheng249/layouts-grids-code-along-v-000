@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+@import url(https://fonts.googleapis.com/css?family=Delius+Swash+Caps);
+
+/*////////// FONTS AND COLORS //////////*/
+*{
+  font-family: "Delius Swash Caps","Trebuchet MS", "Times New Roman", Arial, sans-serif;
+}
+
+#navigation-links a {
+  font: 1.2em "Trebuchet MS", Arial, sans-serif;
+  color: black;
+}
+#navigation-links a.selected, #navigation-links a:hover {
+  background: url("../images/dark-wood.jpg") no-repeat center top;
+  background-size: cover;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+#content h3, #content label {
+  color: #000080;
+}
+
+#navigation {
+  border: 1px solid #1a1a1a;
+}
+
+/*////////// BACKGROUNDS //////////*/
+
+.white-wood {
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+#navigation, #details {
+  background: url("../images/pine-wood.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+/*/////// MEDIA ////////*/
+
+img, video, audio, iframe, table, form {
+  width: 100%; /* IE */
+  max-width: 100%; /* FF, Safari, Chrome */
+}
+
+/*/////// LAYOUT STYLES ////////*/
+
+.row {
+  margin-bottom: 10px;
+}
+
+#content {
+  margin-top: 60px;
+}
+#content * {
+  background-color: white;
+  padding: 10px;
+}
+
+#details {
+  margin-bottom: 0px;
+  border-top: 1px solid #1a1a1a;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.no-margins {
+  margin: 0 auto;
+}
+
+#contact-form *{
+  width: 100%;
+  border-radius: 10px;
+}
+#contact-form input[value="send"] {
+  background-color: black;
+  color: white;
+  width: 90px;
+  padding: 5px;
+  border-radius: 10px;
+}
+#map {
+  height: 100%;
+}
+figcaption {
+  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+  color: #777;
+  text-align: right;
+}
+
+/*/////// MARKET REPORT TABLE ////////*/
+#content table {
+  margin: 0 0 20px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+#content tr:nth-child(even) td{
+  background-color: #efefef;
+}
+
+#content th, #content td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#content th {
+  background-color: #555;
+  color: white;
+}
+
+/*/////// LOGO ////////*/
+#logo {
+  padding-top: 0;
+  margin-left: 30px;
+}
+#logo img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-indent: 100%;
+  overflow: hidden;
+  background: no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  float: none;
+}
+#logo h2 {
+  display: inline-block;
+  font: 2em "Clicker Script", cursive;
+  margin: 0 auto;
+  position: relative;
+  left: 5px;
+  top: 5px;
+  color: #303;
+  height: auto;
+}
+@media only screen and (max-width: 992px) {
+  #logo h2 {
+    display: none;
+  }
+}
+
+/*/////// FOOTER ////////*/
+footer {
+  background: white;
+  border-top: 1px solid #1a1a1a;
+  text-align: center;
+  height: 21px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
